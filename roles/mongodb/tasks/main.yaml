@@ -9,7 +9,7 @@
    state: installed
    update_cache: yes
 - name: start and enable service
-  ansible.builtin.yum:
+  ansible.builtin.service:
    name: mongod
    state: started
    enabled: true 
