@@ -38,5 +38,5 @@
 
 - name: Unzip {{component}} app code
   ansible.builtin.unarchive:
-   src: "{{component}}.zip"
+   src: "/tmp/{{component}}.zip"
    dest: /app
