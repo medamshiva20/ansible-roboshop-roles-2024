@@ -31,13 +31,14 @@
    state: directory
   when: directory.stat.exists == false
 
-- name: Download the {{component}} code
+- name: "Download the {{component}} code"
   ansible.builtin.get_url:
    url: https://roboshop-builds.s3.amazonaws.com/{{component}}.zip
    dest: /tmp
-   remote_src: yes
+   
 
-- name: Unzip {{component}} app code
+- name: "Unzip {{component}} app code"
   ansible.builtin.unarchive:
    src: "/tmp/{{component}}.zip"
    dest: /app
+   remote_src: yes
