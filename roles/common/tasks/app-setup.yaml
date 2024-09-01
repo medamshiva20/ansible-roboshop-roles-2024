@@ -35,6 +35,7 @@
   ansible.builtin.get_url:
    url: https://roboshop-builds.s3.amazonaws.com/{{component}}.zip
    dest: /tmp
+   remote_src: yes
 
 - name: Unzip {{component}} app code
   ansible.builtin.unarchive:
