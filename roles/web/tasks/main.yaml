@@ -8,7 +8,8 @@
 - name: start and enable service
   ansible.builtin.service:
    name: nginx 
-   state: enabled
+   state: started
+   enabled: true
 
 - name: remove html folder
   ansible.builtin.file:
