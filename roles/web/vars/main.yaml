@@ -1,0 +1,5 @@
+CATALOGUE_HOST: catalogue.sivadevops.website
+USER_HOST: user.sivadevops.website
+SHIPPING_HOST: shipping.sivadevops.website
+CART_HOST: cart.sivadevops.website
+PAYMENT_HOST: payment.sivadevops.website
