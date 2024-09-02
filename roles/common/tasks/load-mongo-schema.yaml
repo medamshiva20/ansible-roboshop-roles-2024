@@ -9,4 +9,4 @@
    state: installed
 
 - name: Load schema into the mongodb
-  ansible.builtin.shell: mongo --host mongodb.sivadevops.website < /app/schema/catalogue.js
+  ansible.builtin.shell: mongo --host mongodb.sivadevops.website < /app/schema/{{component}}.js
