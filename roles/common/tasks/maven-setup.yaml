@@ -1,0 +1,5 @@
+- name: Install maven 
+  ansible.builtin.yum:
+   name: maven
+   state: installed
+   update_cache: yes
